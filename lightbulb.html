@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lighbulb</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            min-width: 250px;
+            padding: 30px;
+        }
+        
+        .lightbulb {
+            border: 1px solid grey;
+            padding: 10px;
+            width: 25%;
+            float: left;
+            cursor: pointer;
+        }
+        
+        .lightbulb img {
+            width: 100%;
+        }
+        
+        .bulb-on {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="lightbulb">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-65/lightbulb.svg" alt=" ">
+            </div>
+            <div class="lightbulb">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-65/lightbulb.svg" alt=" ">
+            </div>
+        </div>
+        <div class="lightbulb">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-65/lightbulb.svg" alt=" ">
+        </div>
+        <div class="lightbulb">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-65/lightbulb.svg" alt=" ">
+        </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <script>
+        function handleBulbClicks() {
+            $('.lightbulb').click(function (event) {
+                $('.lightbulb').removeClass('bulb-on');
+                $(event.currentTarget).addClass('bulb-on')
+            });
+        }
+
+        $(function () {
+            handleBulbClicks();
+        });
+    </script>
+
+</body>
+
+</html>
