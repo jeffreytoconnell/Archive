@@ -30,10 +30,12 @@ p {
   line-height: 80px;
 }
 
-.fizz, .fizzbuzz {
+.fizz,
+.fizzbuzz {
   border: 4px solid green;
 }
 
-.buzz, .fizzbuzz {
+.buzz,
+.fizzbuzz {
   background-color: #D5F5E3;
 }
