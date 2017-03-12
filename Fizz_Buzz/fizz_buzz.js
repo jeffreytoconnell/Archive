@@ -16,7 +16,7 @@ function getFizzBuzzValue(num) {
 
 function makeFizzBuzzArray(num) {
   var result = [];
-  for (var i=1; i<=num; i++) {
+  for (var i = 1; i <= num; i++) {
     result.push(getFizzBuzzValue(getFizzBuzzValue(i)));
   }
   return result;
@@ -24,31 +24,28 @@ function makeFizzBuzzArray(num) {
 
 function doFizzBuzz(num) {
   var fizzBuzzArray = makeFizzBuzzArray(num);
-  fizzBuzzArray.forEach(function(item) {
-      var newElem = $(
-        '<div class="fizz-buzz-item"><span>' + item + '</span></div>');
-      if (item === fizzString || item === buzzString || item === fizzBuzzString) {
-        newElem.addClass(item);
-      }
-      $(".js-results").append(newElem);
+  fizzBuzzArray.forEach(function (item) {
+    var newElem = $(
+      '<div class="fizz-buzz-item"><span>' + item + '</span></div>');
+    if (item === fizzString || item === buzzString || item === fizzBuzzString) {
+      newElem.addClass(item);
+    }
+    $(".js-results").append(newElem);
   })
 }
 
 
 function handleFormSubmit() {
-  $('#number-chooser').submit(function(event) {
+  $('#number-chooser').submit(function (event) {
     event.preventDefault();
     // in case there's already results
     $(".js-results").empty();
-    var choice = parseInt( $(event.currentTarget).find(
+    var choice = parseInt($(event.currentTarget).find(
       'input[name="number-choice"]').val());
     doFizzBuzz(choice);
   });
 }
 
-$(function() {
+$(function () {
   handleFormSubmit();
-})
-
-
-
+});
