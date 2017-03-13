@@ -45,6 +45,7 @@ function reportOnText(text) {  // COMES FROM watchFormSubmission
   var averageWordLength = getAverageWordLength(tokens); // SENDS INFO TO getAverageWordLength
 
   // take our data and display it in the dom
+  // called from HTML
   var textReport = $('.js-text-report');
   textReport.find('.js-word-count').text(numTotalWords);
   textReport.find('.js-unique-word-count').text(numDistinctWords);
