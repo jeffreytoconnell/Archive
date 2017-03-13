@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Text analyzer</title>
+    <title>Thinkful | Text analyzer example solution</title>
     <meta charset="utf-8">
+    <meta name="description" content="Exemplary solution for the text analyzer project from Thinkful's Front End Web Development course">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+   <!--  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-
 <body>
     <div class="container">
         <main>
@@ -17,15 +17,14 @@
             <form class="js-text-form">
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        required></textarea>
+                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
                 </div>
                 <div>
                     <button type="submit">Analyze it!</button>
                 </div>
             </form>
 
-            <dl class="text-report js-text-report">
+            <dl class="hidden text-report js-text-report">
                 <dt>Word count</dt>
                 <dd class="js-word-count"></dd>
 
@@ -38,9 +37,8 @@
         </main>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" <script type="text/javascript" src="app.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 </body>
-
 </html>
