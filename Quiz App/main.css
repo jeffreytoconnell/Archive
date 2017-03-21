@@ -13,6 +13,7 @@ input[type="text"] {
 
 h4:hover {
   cursor: pointer;
+  color: green;
 }
 
 button:hover {

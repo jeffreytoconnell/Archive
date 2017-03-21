@@ -1,10 +1,6 @@
-$( "#wrong" ).click(function() {
-  alert( "Wrong!!!" );
-});
+var correct_answers = 0;
 
-$( "#correct" ).click(function() {
-  alert( "Wrong!!!" );
-});
+
 
 $( ".wrong" ).click(function() {
   alert( ".wrong" );
@@ -12,4 +8,6 @@ $( ".wrong" ).click(function() {
 
 $( ".correct" ).click(function() {
   alert( ".correct" );
+  correct_answers++;
+  console.log(correct_answers);
 });
