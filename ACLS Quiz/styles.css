@@ -1,0 +1,30 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	
+}
+
+div {
+	
+	font-size: 20px;
+	text-align: center;
+	color: green;
+}
+
+h2 {
+	font-size: 30px;
+	color: red;
+	text-align: center;
+	
+}
+
+ul {
+	font-size: 30px;
+	color: blue;
+	margin-left: 500px;
+	
+}
